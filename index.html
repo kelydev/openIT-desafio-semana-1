@@ -1,13 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ksv</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ksv</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <nav>
+            <a href="#">
+                <img src="./images/logo.png" alt="logo openIT" width="50px" />
+            </a>
+            <ul>
+                <li><a href="#">A cerca de openIT</a></li>
+                <li><a href="#">Participantes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--form-->
+    <section>
+        <div>
+            <img src="./images/fondo.png" alt="fondo" width="350px" />
+            <h1>Bienvenido a openIT</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
+                fugiat fuga saepe dolores expedita quidem harum ipsum quas nisi
+                veritatis minima temporibus nobis modi sint repudiandae eius? Rerum,
+                nulla asperiores? Nam illum laudantium mollitia provident.
+                Consequuntur reiciendis omnis praesentium hic placeat vero optio
+                dolores dolorum assumenda provident eaque animi, sit tempora suscipit
+                enim iste eligendi quisquam consequamollitia. Id vero, fuga facere
+                inventore architecto asperiores nam molestiae, quis earum dolorum
+                placeat, nisi obcaecati nihil aperiam accusantium et dignissimos
+                ducimus veniam laboriosam consequuntur dolores? Corporis sae cum non!
+            </p>
+        </div>
+        <div>
+            <p>Ingrese sus datos</p>
+
+            <form action="">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" />
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" /><br />
+                <label for="correo">Correo:</label>
+                <input type="text" id="correo" name="correo" /><br />
+                <label for="sexo">Sexo</label><br />
+                <input type="radio" id="femenino" name="sexo" />
+                <label for="html">Femenino</label>
+                <input type="radio" id="masculino" name="sexo" />
+                <label for="html">Masculino</label>
+                <input type="radio" id="otro" name="sexo" />
+                <label for="html">Sin especificar</label><br />
+                <label for="nivel">Grado de Instruccion:</label>
+                <select id="nivel">
+                    <option value="primaria">Primaria</option>
+                    <option value="secundaria">Secundario</option>
+                    <option value="universitario">Universitario</option>
+                    <option value="bachiller">Bachiller</option>
+                </select><br />
+                <button>Registrar</button>
+            </form>
+        </div>
+    </section>
+    <!--table-->
+    <section>
+        <h2>Lista de Participantes</h2>
+        <table>
+            <tr>
+                <th>N°</th>
+                <th>Nombre</th>
+                <th>Sexo</th>
+                <th>Grado Instruccion</th>
+                <th>Cantidad de Lenguajes</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Maria Anders</td>
+                <td>Femenino</td>
+                <td>Secundario</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Esteban</td>
+                <td>Masculino</td>
+                <td>Bachiller</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ana</td>
+                <td>Femenino</td>
+                <td>Universitario</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Paul</td>
+                <td>Masculino</td>
+                <td>Secundario</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </section>
+    <!--footer-->
+    <footer>
+        <div class="container_icons">
+            <a href="#">
+                <img src="https://image.flaticon.com/icons/png/512/174/174857.png" alt="LinkedIn" class="icons" />
+            </a>
+            <a href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp" class="icons" />
+            </a>
+            <a href="#">
+                <img src="https://image.flaticon.com/icons/png/512/975/975645.png" alt="Página Personal"
+                    class="icons" />
+            </a>
+            <a href="#">
+                <img src="https://image.flaticon.com/icons/png/512/733/733553.png" alt="GitHub" class="icons" />
+            </a>
+            <a href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" alt="YouTube" class="icons" />
+            </a>
+            <a href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="icons" />
+            </a>
+            <a href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/893/893257.png" alt="Correo" class="icons" />
+            </a>
+        </div>
+        <p>© 2022 kelydev, todos los derechos reservados.</p>
+    </footer>
 </body>
+
 </html>
