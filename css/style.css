@@ -1,0 +1,163 @@
+.body {
+    margin: 0px;
+}
+
+.header {
+    background-color: #4CAF50;
+}
+
+.nav {
+    padding: 5px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.nav__logo {
+    width: 30px;
+    padding-top: 10px;
+    border-radius: 70px;
+}
+
+.nav__item {
+    padding: 0px 10px;
+}
+
+.nav__link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.home {
+    padding: 10px 50px 40px;
+}
+
+.left {
+    text-align: center;
+    padding-bottom: 30px;
+    padding: 10px 30px;
+}
+
+.home__fondo {
+    width: 300px;
+}
+
+.home__title {
+    color: #20529c;
+}
+
+.right {
+    text-align: center;
+    padding: 40px 5px;
+    margin: 0px 20px;
+}
+
+.home__form {
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+    padding: 40px 5px;
+}
+
+.home__form--title {
+    color: #20529c;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.home__form--input {
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    padding: 5px;
+
+}
+
+.home__form--option {
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.home__form--button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: 2px solid #4CAF50;
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 16px;
+    margin-top: 50px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.home__form--button:hover {
+    background-color: #ffffff;
+    color: #4CAF50;
+}
+
+.participantes {
+    text-align: center;
+    margin: 0px 50px 50px;
+}
+
+.participantes__title {
+    color: #20529c;
+}
+
+.table, th, td {
+    border: 1px solid #20529c;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+.footer {
+    padding: 40px 50px 10px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.container__icons {
+    margin: 20px 0px;
+}
+
+.footer__link {
+    text-decoration: none;
+}
+
+.footer__icons {
+    width: 40px;
+}
+
+@media (min-width: 700px) {
+    .home {
+        display: flex;
+    }
+
+    .home__container {
+        width: 50%;
+    }
+
+    .left {
+        padding-top: 120px;
+    }
+
+    .right {
+        margin: 0px 0px;
+    }
+}

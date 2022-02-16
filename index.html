@@ -1,142 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ksv</title>
+    <!-- Primary Meta Tags -->
+    <title>openIT</title>
+    <meta name="title" content="openIT  " />
+    <meta name="description" content="openIT pagina para el reclutamiento y selección de programadores" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="openIT  " />
+    <metaproperty="og:description" content="openIT pagina para el reclutamiento y selección de programadores" />
+    <meta property="og:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="openIT  " />
+    <meta property="twitter:description" content="openIT pagina para el reclutamiento y selección de programadores" />
+    <meta property="twitter:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body>
+<body class="body">
     <!--header-->
-    <header>
-        <nav>
-            <a href="#">
-                <img src="./images/logo.png" alt="logo openIT" width="50px" />
+    <header class="header">
+        <nav class="nav">
+            <a class="nav__link" href="#">
+                <img src="./images/logo.png" alt="logo openIT" class="nav__logo" />
             </a>
-            <ul>
-                <li><a href="#">A cerca de openIT</a></li>
-                <li><a href="#">Participantes</a></li>
-                <li><a href="#">Contacto</a></li>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Participantes</a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <!--form-->
-    <section>
-        <div>
-            <img src="./images/fondo.png" alt="fondo" width="350px" />
-            <h1>Bienvenido a openIT</h1>
-            <p>
+    <section class="home">
+        <div class="home__container left">
+            <img src="./images/fondo.png" alt="fondo" class="home__fondo" />
+            <h1 class="home__title">Bienvenido a openIT</h1>
+            <p class="home__description">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
                 fugiat fuga saepe dolores expedita quidem harum ipsum quas nisi
                 veritatis minima temporibus nobis modi sint repudiandae eius? Rerum,
                 nulla asperiores? Nam illum laudantium mollitia provident.
-                Consequuntur reiciendis omnis praesentium hic placeat vero optio
-                dolores dolorum assumenda provident eaque animi, sit tempora suscipit
-                enim iste eligendi quisquam consequamollitia. Id vero, fuga facere
-                inventore architecto asperiores nam molestiae, quis earum dolorum
-                placeat, nisi obcaecati nihil aperiam accusantium et dignissimos
-                ducimus veniam laboriosam consequuntur dolores? Corporis sae cum non!
             </p>
         </div>
-        <div>
-            <p>Ingrese sus datos</p>
-
-            <form action="">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" />
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" /><br />
-                <label for="correo">Correo:</label>
-                <input type="text" id="correo" name="correo" /><br />
-                <label for="sexo">Sexo</label><br />
-                <input type="radio" id="femenino" name="sexo" />
-                <label for="html">Femenino</label>
-                <input type="radio" id="masculino" name="sexo" />
-                <label for="html">Masculino</label>
-                <input type="radio" id="otro" name="sexo" />
-                <label for="html">Sin especificar</label><br />
-                <label for="nivel">Grado de Instruccion:</label>
-                <select id="nivel">
-                    <option value="primaria">Primaria</option>
-                    <option value="secundaria">Secundario</option>
-                    <option value="universitario">Universitario</option>
-                    <option value="bachiller">Bachiller</option>
-                </select><br />
-                <button>Registrar</button>
+        <div class="home__container right">
+            <form action="" class="home__form">
+                <h3 class="home__form--title">Ingrese sus datos</h3>
+                <div class="form__contenedor">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" class="home__form--input" required />
+                </div>
+                <div class="form__contenedor">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" class="home__form--input" required />
+                </div>
+                <div class="form__contenedor">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" class="home__form--input" required
+                        value="user@gmail.com" />
+                </div>
+                <div class="form__contenedor">
+                    <label for="numero">Telefono:</label>
+                    <input type="number" id="numero" name="numero" class="home__form--input" required min="900000000"
+                        max="999999999" />
+                </div>
+                <div class="form__contenedor">
+                    <label for="sexo">Sexo:</label>
+                </div>
+                <div class="form__contenedor">
+                    <input type="radio" id="femenino" name="sexo" class="home__form--input" required />
+                    <label for="html">Femenino</label>
+                    <input type="radio" id="masculino" name="sexo" class="home__form--input" required />
+                    <label for="html">Masculino</label>
+                </div>
+                <div>
+                    <label for="nivel">Grado de Instruccion:</label>
+                    <select id="nivel" class="home__form--option">
+                        <option value="primaria">Primaria</option>
+                        <option value="secundaria">Secundario</option>
+                        <option value="universitario">Universitario</option>
+                        <option value="bachiller">Bachiller</option>
+                    </select><br />
+                </div>
+                <div>
+                    <button class="home__form--button">Registrar</button>
+                </div>
             </form>
         </div>
     </section>
     <!--table-->
-    <section>
-        <h2>Lista de Participantes</h2>
-        <table>
+    <section class="participantes">
+        <h2 class="participantes__title">Lista de Participantes</h2>
+        <table class="table">
             <tr>
                 <th>N°</th>
                 <th>Nombre</th>
                 <th>Sexo</th>
                 <th>Grado Instruccion</th>
-                <th>Cantidad de Lenguajes</th>
             </tr>
             <tr>
                 <td>1</td>
                 <td>Maria Anders</td>
                 <td>Femenino</td>
                 <td>Secundario</td>
-                <td>1</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>Esteban</td>
                 <td>Masculino</td>
                 <td>Bachiller</td>
-                <td>2</td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>Ana</td>
                 <td>Femenino</td>
                 <td>Universitario</td>
-                <td>3</td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>Paul</td>
                 <td>Masculino</td>
                 <td>Secundario</td>
-                <td>1</td>
             </tr>
         </table>
     </section>
     <!--footer-->
-    <footer>
-        <div class="container_icons">
-            <a href="#">
-                <img src="https://image.flaticon.com/icons/png/512/174/174857.png" alt="LinkedIn" class="icons" />
+    <footer class="footer">
+        <div class="container__icons">
+            <a href="#" class="footer__link">
+                <img src="https://cdn-icons.flaticon.com/png/512/3488/premium/3488326.png?token=exp=1644986937~hmac=c2a6014bae31204c4b8514705d6dd7c9"
+                    alt="LinkedIn" class="footer__icons" />
             </a>
-            <a href="#">
-                <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp" class="icons" />
+            <a href="#" class="footer__link">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111612.png" alt="GitHub" class="footer__icons" />
             </a>
-            <a href="#">
-                <img src="https://image.flaticon.com/icons/png/512/975/975645.png" alt="Página Personal"
-                    class="icons" />
+            <a href="#" class="footer__link">
+                <img src="https://cdn-icons.flaticon.com/png/512/3494/premium/3494619.png?token=exp=1644987086~hmac=5c71a722f75a831e94332a160310f369"
+                    alt="Correo" class="footer__icons" />
             </a>
-            <a href="#">
-                <img src="https://image.flaticon.com/icons/png/512/733/733553.png" alt="GitHub" class="icons" />
-            </a>
-            <a href="#">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" alt="YouTube" class="icons" />
-            </a>
-            <a href="#">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="icons" />
-            </a>
-            <a href="#">
-                <img src="https://cdn-icons-png.flaticon.com/512/893/893257.png" alt="Correo" class="icons" />
+            <a href="#" class="footer__link">
+                <img src="https://cdn-icons.flaticon.com/png/512/2335/premium/2335416.png?token=exp=1644987221~hmac=3f2df9db86eb29b35a267353a1bd6df8"
+                    alt="Facebook" class="footer__icons" />
             </a>
         </div>
-        <p>© 2022 kelydev, todos los derechos reservados.</p>
+        <p class="footer__copyright">
+            © 2022 kelydev, todos los derechos reservados.
+        </p>
     </footer>
 </body>
 
