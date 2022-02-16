@@ -9,48 +9,55 @@
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body class="body">
+<body>
     <!--header-->
-    <header class="header">
-        <nav class="nav">
-            <a class="nav__link" href="#">
-                <img src="./images/logo.png" alt="logo openIT" class="nav__logo" />
+    <header>
+        <nav>
+            <a href="#">
+                <img src="./images/logo.png" alt="logo openIT" width="50px" />
             </a>
-            <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Participantes</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Contacto</a></li>
+            <ul>
+                <li><a href="#">A cerca de openIT</a></li>
+                <li><a href="#">Participantes</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <!--form-->
-    <section class="home">
-        <div class="home__container">
-            <img src="./images/fondo.png" alt="fondo" class="home__fondo"/>
-            <h1 class="home__title">Bienvenido a openIT</h1>
-            <p class="home__description">
+    <section>
+        <div>
+            <img src="./images/fondo.png" alt="fondo" width="350px" />
+            <h1>Bienvenido a openIT</h1>
+            <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
                 fugiat fuga saepe dolores expedita quidem harum ipsum quas nisi
                 veritatis minima temporibus nobis modi sint repudiandae eius? Rerum,
                 nulla asperiores? Nam illum laudantium mollitia provident.
+                Consequuntur reiciendis omnis praesentium hic placeat vero optio
+                dolores dolorum assumenda provident eaque animi, sit tempora suscipit
+                enim iste eligendi quisquam consequamollitia. Id vero, fuga facere
+                inventore architecto asperiores nam molestiae, quis earum dolorum
+                placeat, nisi obcaecati nihil aperiam accusantium et dignissimos
+                ducimus veniam laboriosam consequuntur dolores? Corporis sae cum non!
             </p>
         </div>
-        <div class="home__container">
-            <form action="" class="home__form">
-                <h3 class="home__form--title">Ingrese sus datos</h3>
+        <div>
+            <p>Ingrese sus datos</p>
+
+            <form action="">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" class="home__form--input"/>
+                <input type="text" id="nombre" name="nombre" />
                 <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" class="home__form--input"/>
+                <input type="text" id="apellido" name="apellido" /><br />
                 <label for="correo">Correo:</label>
-                <input type="text" id="correo" name="correo" class="home__form--input"/>
-                <label for="sexo">Sexo</label>
-                <input type="radio" id="femenino" name="sexo" class="home__form--input"/>
+                <input type="text" id="correo" name="correo" /><br />
+                <label for="sexo">Sexo</label><br />
+                <input type="radio" id="femenino" name="sexo" />
                 <label for="html">Femenino</label>
-                <input type="radio" id="masculino" name="sexo" class="home__form--inputRadio"/>
+                <input type="radio" id="masculino" name="sexo" />
                 <label for="html">Masculino</label>
-                <input type="radio" id="otro" name="sexo" class="home__form--inputRadio"/>
-                <label for="html">Sin especificar</label>
+                <input type="radio" id="otro" name="sexo" />
+                <label for="html">Sin especificar</label><br />
                 <label for="nivel">Grado de Instruccion:</label>
                 <select id="nivel">
                     <option value="primaria">Primaria</option>
@@ -58,7 +65,7 @@
                     <option value="universitario">Universitario</option>
                     <option value="bachiller">Bachiller</option>
                 </select><br />
-                <button class="home__form--button">Registrar</button>
+                <button>Registrar</button>
             </form>
         </div>
     </section>
@@ -132,4 +139,5 @@
         <p>© 2022 kelydev, todos los derechos reservados.</p>
     </footer>
 </body>
+
 </html>
