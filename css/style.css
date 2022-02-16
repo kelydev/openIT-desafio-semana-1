@@ -33,3 +33,76 @@
     list-style: none;
 }
 
+.home {
+    padding: 20px 50px;
+}
+
+.left {
+    text-align: center;
+}
+  
+.home__fondo {
+    width: 300px;
+}
+
+.home__form {
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+    display: block;
+    padding: 40px 5px;
+    text-align: center;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+  
+.home__form--input {
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    padding: 5px;
+    
+}
+
+.home__form--option {
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.home__form--button {
+    background-color: #4CAF50;
+    color:#fff;
+    border: 2px solid #4CAF50;
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 16px;
+    margin-top: 50px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+  
+.home__form--button:hover  {
+    background-color: #ffffff;
+    color: #4CAF50;
+}
+
+.participantes {
+    text-align: center;
+    margin: 0px 5px;
+}
+
+.table, th, td{
+    border: 1px solid #ddd;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}

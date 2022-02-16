@@ -25,7 +25,7 @@
     </header>
     <!--form-->
     <section class="home">
-        <div class="home__container">
+        <div class="home__container left">
             <img src="./images/fondo.png" alt="fondo" class="home__fondo"/>
             <h1 class="home__title">Bienvenido a openIT</h1>
             <p class="home__description">
@@ -39,20 +39,24 @@
             <form action="" class="home__form">
                 <h3 class="home__form--title">Ingrese sus datos</h3>
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" class="home__form--input"/>
+                <input type="text" id="nombre" name="nombre" class="home__form--input" required/>
                 <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" class="home__form--input"/>
+                <input type="text" id="apellido" name="apellido" class="home__form--input" required/>
                 <label for="correo">Correo:</label>
-                <input type="text" id="correo" name="correo" class="home__form--input"/>
-                <label for="sexo">Sexo</label>
-                <input type="radio" id="femenino" name="sexo" class="home__form--input"/>
-                <label for="html">Femenino</label>
-                <input type="radio" id="masculino" name="sexo" class="home__form--inputRadio"/>
-                <label for="html">Masculino</label>
-                <input type="radio" id="otro" name="sexo" class="home__form--inputRadio"/>
-                <label for="html">Sin especificar</label>
+                <input type="email" id="correo" name="correo" class="home__form--input" required/>
+                <label for="numero">Telefono:</label>
+                <input type="number" id="numero" name="numero" class="home__form--input" required min="900000000" max="999999999"/>
+                <div>
+                    <label for="sexo">Sexo:</label>
+                </div>
+                <div>
+                    <input type="radio" id="femenino" name="sexo" class="home__form--input" required/>
+                    <label for="html">Femenino</label>
+                    <input type="radio" id="masculino" name="sexo" class="home__form--input" required/>
+                    <label for="html">Masculino</label>
+                </div>
                 <label for="nivel">Grado de Instruccion:</label>
-                <select id="nivel">
+                <select id="nivel" class="home__form--option">
                     <option value="primaria">Primaria</option>
                     <option value="secundaria">Secundario</option>
                     <option value="universitario">Universitario</option>
@@ -63,43 +67,38 @@
         </div>
     </section>
     <!--table-->
-    <section>
-        <h2>Lista de Participantes</h2>
-        <table>
+    <section class="participantes">
+        <h2 class="participantes__title">Lista de Participantes</h2>
+        <table class="table">
             <tr>
                 <th>N°</th>
                 <th>Nombre</th>
                 <th>Sexo</th>
                 <th>Grado Instruccion</th>
-                <th>Cantidad de Lenguajes</th>
             </tr>
             <tr>
                 <td>1</td>
-                <td>Maria Anders</td>
+                <td>Maria</td>
                 <td>Femenino</td>
                 <td>Secundario</td>
-                <td>1</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>Esteban</td>
                 <td>Masculino</td>
                 <td>Bachiller</td>
-                <td>2</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td>3</td>
                 <td>Ana</td>
                 <td>Femenino</td>
                 <td>Universitario</td>
-                <td>3</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td>4</td>
                 <td>Paul</td>
                 <td>Masculino</td>
                 <td>Secundario</td>
-                <td>1</td>
             </tr>
         </table>
     </section>
