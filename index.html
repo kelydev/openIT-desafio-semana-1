@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,17 +21,20 @@
     <meta property="twitter:url" content="https://metatags.io/" />
     <meta property="twitter:title" content="openIT  " />
     <meta property="twitter:description" content="openIT pagina para el reclutamiento y selección de programadores" />
-    <meta property="twitter:image"
-        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/style.css"/>
 </head>
 
 <body class="body">
-    <!--header-->
     <header class="header">
-        <nav class="nav">
-            <a class="nav__link" href="#">
-                <img src="./images/logo.png" alt="logo openIT" class="nav__logo" />
+        <nav class="nav" id="navbar">
+            <a class="nav__links" href="#">
+                <img src="./img/logo.png" alt="logo openIT" class="nav__logo" />
             </a>
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
@@ -41,16 +45,14 @@
             </ul>
         </nav>
     </header>
-    <!--form-->
     <section class="home">
         <div class="home__container left">
-            <img src="./images/fondo.png" alt="fondo" class="home__fondo" />
+            <img src="./img/fondo.png" alt="fondo" class="home__fondo" />
             <h1 class="home__title">Bienvenido a openIT</h1>
             <p class="home__description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
-                fugiat fuga saepe dolores expedita quidem harum ipsum quas nisi
-                veritatis minima temporibus nobis modi sint repudiandae eius? Rerum,
-                nulla asperiores? Nam illum laudantium mollitia provident.
+                Unase a mas de 20 millones de desarrolladores, practique habilidades de codificación.
+                Lo acompañamos desde sus primeros pasos hasta convertirse en un profesional en el mundo de la programación competitiva,
+                su viaje comienza aquí.
             </p>
         </div>
         <div class="home__container right">
@@ -98,7 +100,7 @@
             </form>
         </div>
     </section>
-    <!--table-->
+
     <section class="participantes">
         <h2 class="participantes__title">Lista de Participantes</h2>
         <table class="table">
@@ -134,29 +136,29 @@
             </tr>
         </table>
     </section>
-    <!--footer-->
+    
     <footer class="footer">
         <div class="container__icons">
             <a href="#" class="footer__link">
-                <img src="https://cdn-icons-png.flaticon.com/512/1383/1383329.png"
-                    alt="LinkedIn" class="footer__icons" />
+                <img src="https://cdn-icons-png.flaticon.com/512/1383/1383329.png" alt="LinkedIn"
+                    class="footer__icons" />
             </a>
             <a href="#" class="footer__link">
                 <img src="https://cdn-icons-png.flaticon.com/512/2111/2111612.png" alt="GitHub" class="footer__icons" />
             </a>
             <a href="#" class="footer__link">
-                <img src="https://cdn-icons-png.flaticon.com/512/520/520648.png"
-                    alt="Correo" class="footer__icons" />
+                <img src="https://cdn-icons-png.flaticon.com/512/520/520648.png" alt="Correo" class="footer__icons" />
             </a>
             <a href="#" class="footer__link">
-                <img src="https://cdn-icons-png.flaticon.com/512/220/220342.png"
-                    alt="Facebook" class="footer__icons"/>
+                <img src="https://cdn-icons-png.flaticon.com/512/220/220342.png" alt="Facebook" class="footer__icons" />
             </a>
         </div>
         <p class="footer__copyright">
             © 2022 kelydev, todos los derechos reservados.
         </p>
     </footer>
+
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
