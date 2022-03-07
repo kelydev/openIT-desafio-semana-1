@@ -1,31 +1,54 @@
+:root {
+    --theme-primary-color: #ffffff;
+    --theme-secondary-color: #32C765;
+    --theme-third-color: #c43494;
+    --theme-fourth-color: #d6d6d6;
+    --theme-color3: #24b44c;
+    --theme-color2: #24b46c;
+    --theme-color: #576871;
+    --font-size: 16px;
+}
+
 .body {
+    font-family: 'Open Sans', sans-serif;;
     margin: 0px;
 }
 
-.header {
-    background-color: #4CAF50;
+header {
+    background-color: var(--theme-primary-color);
+    width: 100%;
 }
 
 .nav {
-    padding: 5px 50px;
-    display: flex;
-    justify-content: space-between;
+    display: block;
     text-align: center;
+    padding: 20px 0px 8px;
 }
 
 .nav__logo {
-    width: 30px;
-    padding-top: 10px;
-    border-radius: 70px;
+    width: 50px;
+}
+
+.nav__list {
+    justify-content: center;
+    margin: 10px 0px;
+    padding-left: 0px;
 }
 
 .nav__item {
-    padding: 0px 10px;
+    padding: 0px 15px;
 }
 
 .nav__link {
-    color: #ffffff;
+    color: var(--theme-color);
     text-decoration: none;
+    font-size:var(--font-size);
+    font-weight: 400;
+}
+
+.nav__link:hover {
+    color: var(--theme-third-color);
+    border-bottom: dashed 3px var(--theme-secondary-color);
 }
 
 .nav__list {
@@ -34,21 +57,25 @@
 }
 
 .home {
-    padding: 10px 50px 40px;
+    padding: 40px 40px;
+    text-align: center;
 }
 
 .left {
-    text-align: center;
     padding-bottom: 30px;
-    padding: 10px 30px;
+}
+.home__description {
+    color: var(--theme-color);
+    text-align: justify;
 }
 
 .home__fondo {
     width: 300px;
+    padding-bottom: 10px;
 }
 
 .home__title {
-    color: #20529c;
+    color: var(--theme-third-color);
 }
 
 .right {
@@ -145,6 +172,29 @@ th, td {
 }
 
 @media (min-width: 700px) {
+    .header {
+        position: fixed;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 90px;
+    }
+
+    .nav__list {
+        padding-top: 15px;
+    }
+
+    .nav__item {
+        padding: 0px 15px;
+    }
+
+    .nav__logo {
+        padding-top: 5px;
+    }
+    
+
     .home {
         display: flex;
     }
